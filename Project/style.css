@@ -1,0 +1,159 @@
+
+/* HTML Tags and text (OK) */ 
+html,body /* Small Fix where there would be a small gab inbetween the edge of the page and the navbar/footer (OK) */
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body {
+	background-color:#d7d8dd;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-shadow: 1px 1px 1px #282828;
+}
+p {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+/* NavBar Design by (OK) */
+li{ /* Links */
+	padding-right: 50px;
+	padding-left: 7px;
+}
+.navbar{ /* Colours and position (OK) */
+    background-color: #222326;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #2b2c30;
+	position: sticky;
+}
+.nav-link{ /* Links Glow Effect (OK) */
+	-webkit-transform: scale(1);
+	transform: scale(1.01);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffffff	
+}
+.nav-link:hover{ /* Hover to see glow effect (OK) */
+	-webkit-transform: scale(1.01);
+	transform: scale(1.015);
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+
+/* Likely to be removed but this is an animation for the shopping cart when it is hovered over (OK) */
+#shopping-cart:hover{ /* Hover */
+	animation: shake .5s 1 alternate;
+	-webkit-transform: scale(1.01);
+	transform: scale(1.015);
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+@keyframes shake { /* Keyframes called shake (OK) */
+  33% {transform: rotate(10deg);}
+  66% {transform: rotate(-10deg);}
+}
+
+
+#carouselExampleFade{ /* Black shadow under all carousel (OK)*/
+	box-shadow: 0px 0px 10px 2px #282828;
+}
+img {	/* Animation When hovering over an image link (OK) */
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.02);
+}
+img:hover{ /* Colour for shadow (OK) */
+    filter: drop-shadow(0px 0px 10px rgba(40, 40, 40, 1));
+}
+
+/* Logo on NavBar */
+.navbar-brand {	/* Animation When hovering over(OK) */
+	-webkit-transform: scale(0.1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.navbar-brand:hover {
+	-webkit-transform: scale(0.1);
+	transform: scale(0.95);
+}
+.navbar-brand:hover{ /* Colour for shadow (OK)*/
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+
+.container { /* Colour and Padding for all containers (OK)*/
+	color: white;
+	border: solid, 0px;
+	padding: 10px;
+}
+.row { /* Colour and Padding for all rows (OK)*/
+	border: solid, 0px;
+	padding: 0px;
+	color:  black;
+}
+
+/* Footer and Copyright Thing  (OK)*/
+footer { /* Footer Tag  (OK)*/
+	font-family: 'Montserrat', sans-serif;
+	background: #333333;
+    position: absolute;
+    left: 0;
+	right: 0;
+	bottom: 1000;
+	text-align: center; 
+}
+.footerLinks { /* Links (OK) */
+   text-align: center;
+   padding: 10px;
+}
+.footerLinks ul { 
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.footerLinks li:hover { /* Animation When hovering over (OK) */
+	 text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+	 color:#ffffff
+}
+.copyright { 
+    text-align: center;
+	padding:10px;
+}
+
+.copyright p {
+	margin: 0;
+	color: #b3b3b3;
+	font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
