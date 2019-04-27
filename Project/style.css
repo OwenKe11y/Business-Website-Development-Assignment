@@ -29,6 +29,7 @@ li{ /* Links */
 	border-width: 2px;
 	border-color: #2b2c30;
 	position: sticky;
+	z-index: 10;
 }
 .nav-link{ /* Links Glow Effect (OK) */
 	-webkit-transform: scale(1);
@@ -165,7 +166,7 @@ footer { /* Footer Tag  (OK)*/
 }
 
 .copyright p {
-	margin: 0;
+	margin-bottom: 0;
 	color: #b3b3b3;
 	font-size: 11px;
 }
@@ -174,18 +175,18 @@ footer { /* Footer Tag  (OK)*/
 
 #iphones{
 	background-color:white;
-	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+	filter: drop-shadow(0px 0px 5px rgba(69, 70, 71));
 	
 }
 
 #iphones1:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-#iphones1:hover{ /* Colour for shadow (OK) */
-    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
 }
 
+.card-deck{
+	margin: 3%;
+}
 
 
 
