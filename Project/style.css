@@ -45,6 +45,30 @@ li{ /* Links */
 	color:#ffffff
 }
 
+.dropdown-menu {
+	background-color: #222326;
+	margin-top: 20px;
+	visibility: visible;
+	
+}
+
+.dropdown-item{
+	-webkit-transform: scale(1);
+	transform: scale(1.01);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffffff	
+	
+}
+
+.dropdown-item:hover{
+	-webkit-transform: scale(1.01);
+	transform: scale(1.015);
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+
 /* Likely to be removed but this is an animation for the shopping cart when it is hovered over (OK) */
 #shopping-cart:hover{ /* Hover */
 	animation: shake .5s 1 alternate;
@@ -148,9 +172,19 @@ footer { /* Footer Tag  (OK)*/
 
 
 
+#iphones{
+	background-color:white;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+	
+}
 
-
-
+#iphones1:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#iphones1:hover{ /* Colour for shadow (OK) */
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
 
 
 
