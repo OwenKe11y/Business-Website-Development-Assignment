@@ -14,6 +14,12 @@ h1 {
 	color: black;
 	text-shadow: 1px 1px 1px #282828;
 }
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-shadow: 1px 1px 1px #282828;
+}
 p {
 	font-family: 'Montserrat', sans-serif;	
 }
@@ -22,7 +28,18 @@ p {
 li{ /* Links */
 	padding-right: 50px;
 	padding-left: 7px;
+	
 }
+
+ul{
+	font-family: 'Montserrat', sans-serif;	
+	-webkit-transform: scale(1);
+	transform: scale(1.01);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	color:#ffffff	
+}
+
 .navbar{ /* Colours and position (OK) */
     background-color: #222326;
 	border-bottom-style: solid;
@@ -49,23 +66,19 @@ li{ /* Links */
 .dropdown-menu {
 	background-color: #222326;
 	margin-top: 20px;
-	visibility: visible;
+	
 	
 }
 
 .dropdown-item{
-	-webkit-transform: scale(1);
-	transform: scale(1.01);
-	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
+	
 	font-family: 'Montserrat', sans-serif;
 	color:#ffffff	
 	
 }
 
 .dropdown-item:hover{
-	-webkit-transform: scale(1.01);
-	transform: scale(1.015);
+	
 	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
 	color:#ffffff
 }
@@ -188,7 +201,13 @@ footer { /* Footer Tag  (OK)*/
 	margin: 3%;
 }
 
+ul.dropdown-lr {
+  width: 300px;
+}
 
+.form-control btn btn-info{
+	margin: 0;
+}
 
 
 
