@@ -27,18 +27,42 @@
 
 		<h2>Sign Up now!</h2>	
 		
-	<form>
-		<input type="text" title="username" placeholder="First Name" />
-		<input type="text" title="username" placeholder="Last Name" />
-		<input type="text" title="username" placeholder="Email" />
-		<input type="password" title="username" placeholder="Password" />
-		<input type="password" title="username" placeholder="Confirm Password" />
+	<form id = "signup" method="post" action = "Project Home Page.html">
+		<input type="text" title="username" placeholder="Name" id = "name" required />
+		<input type="text" title="username" placeholder="Email" id = "email" required />
+		<input type="password" title="username" placeholder="Password" id = "pass" required />
+		
 		<button type="submit" class="btn">Sign up</button>
 		<a class="forgot" href="Login.html">Already have an account? Login Here</a>
 	</form>
 	</div><!--end log form -->
+   </body>
  
  
+   <script>
+	if (localStorage) {
+  // LocalStorage is supported!
+	} else {
+  // No support. Use a fallback such as browser cookies or store on the server.
+	}
+	
+	document.getElementById('signup').addEventListener('submit', function() {
+    // Get the value of the name field.
+    var name = document.getElementById('name').value;
+	var password = document.getElementById('email').value;
+	var email = document.getElementById('pass').value;
+	
+
+    // Save the name in localStorage.
+    localStorage.setItem('name', name);
+	localStorage.setItem('email', email);
+	localStorage.setItem('pass', password);
+	 });
+
+
+
+	
+   </script>
  
  
  
@@ -49,5 +73,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  
 </html>

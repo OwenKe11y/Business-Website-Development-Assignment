@@ -28,13 +28,28 @@
 		<h2>Login to your account</h2>	
 		
 	<form>
-		<input type="text" title="username" placeholder="username" />
-		<input type="password" title="username" placeholder="password" />
-		<button type="submit" class="btn">Login</button>
+		<input type="text" title="email" placeholder="email" id = "email" required />
+		<input type="password" title="pass" placeholder="password" id = "pass" required />
+		<button type="submit" class="btn" onclick="check(this.form)">Login</button>
 		<a class="forgot" href="#">Forgot Username?</a>
 	</form>
 	</div><!--end log form -->
- 
+	
+	<script>
+	function check(form)
+	{
+		if(form.email.value == "gregsmith@gmail.com" && form.pass.value == "123")
+			{
+				window.open('Project Home Page.html')
+			}
+		else
+		{
+			alert("The username or password you entered is not correct")
+		}
+    }
+	
+	
+	</script>
  
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
