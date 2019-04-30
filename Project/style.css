@@ -209,5 +209,71 @@ ul.dropdown-lr {
 	margin: 0;
 }
 
+/* Enda ting */
+
+.box {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+}
+
+.overlay {
+	position: relative;
+	Background-color: #a5a6aa;
+	border-style: groove;
+	border-color: #c8c9ce;
+	padding: 100px;
+	margin: 5% auto;
+
+	
+}
+
+.card-group{
+	filter: drop-shadow(0px 0px 20px black);
+}
+
+button {
+	background-color: black;
+	padding: 20px 70px;
+	border: solid 2px;
+	Border-radius: 40px 10px 40px 10px;
+	font-family: montserrat;
+	font-weight: bold;
+	color: white;
+}
+
+.report {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	
+}
+
+.billjobs {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+	filter: drop-shadow(0px 0px 4px black)
+}
+
+.img_box {
+  display: table;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.img_box a {
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+}
+
+.img_box img {
+  width: 100%;
+  max-width: 150px;
+}
+
+
 
 
