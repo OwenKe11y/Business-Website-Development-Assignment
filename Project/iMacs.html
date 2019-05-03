@@ -30,7 +30,7 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="iPhones.html" id = "iphones1">iPhones</a>
 						<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="iMacs.html">Mac</a>
+							<a class="dropdown-item" href="iMacs.html">iMac</a>
 						<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="iPads.html">iPad</a>
 						</div>
@@ -62,9 +62,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="Login.html">Login</a>
 				</li>
-				<!-- Shopping Cart Icon (OK) -->
+				<!-- Shopping Cart Icon (OK & EG) -->
 				<li class="nav-item">
-					<a class="nav-link" href="#" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span></a>
+					<a class="nav-link" href="Cart.html" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span><span id="dispNum"> 0</span></a>
 				</li>
 			</ul>
 		</div>
@@ -80,7 +80,7 @@
 	<div class="container">
 	  <div class="page-header">
 		<br>
-		 <h1 align = "center"><b>Placeholder</b> Placeholder <b>Placeholder</b></h1>
+		 <h1 align = "center">Our lineup of <b>iMacs</b></h1>
 		<br>
 		<br>
 		<br>
@@ -90,19 +90,19 @@
 	<div class="container" id ="iphones">
 	<div class="card-deck">
   <div class="card" style="width:600px">
-  <img class="card-img-top" src="images\Mac_1.jpg" alt="Card image" height = "400">
+  <img class="card-img-top" src="images\imac.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iMac </h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">The vision behind iMac has never wavered: transform the desktop experience by fitting powerful, easy-to-use technology into an elegant, all-in-one design. The new iMac takes that idea to the next level - giving you even more amazing tools to do just about anything. iMac is packed with the latest processors, faster memory and phenomenal graphics. All coming to life on the brightest, most vibrant Retina display ever on a Mac. It's the total package - powered up.</p>
+    <button onclick="imac()" class="btn btn-primary">Click to Buy!</button>
   </div>
   </div>
   <div class="card" style="width:600px">
-  <img class="card-img-top" src="images\Mac_1.jpg" alt="Card image" height = "400">
+  <img class="card-img-top" src="images\macbook_air.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">MacBook Air</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">The most loved Mac is about to make you fall in love all over again. Available in silver, space grey and gold, the new thinner and lighter MacBook Air features a brilliant Retina display, Touch ID, the latest-generation keyboard and a Force Touch trackpad. The iconic wedge is created from 100 per cent recycled aluminium, making it the greenest Mac ever.1 And with all-day battery life, MacBook Air is your perfectly portable, do-it-all notebook.</p>
+    <button onclick="macbookair()" class="btn btn-primary">Click to Buy!</button>
   </div>
 </div>
 </div>
@@ -111,24 +111,24 @@
 <div class="container" id ="iphones">
 	<div class="card-deck">
   <div class="card" style="width:400px">
-  <img class="card-img-top" src="images\Mac_1.jpg" alt="Card image" height = "400">
+  <img class="card-img-top" src="images\macbook_pro.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">MacBook Pro</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">MacBook Pro elevates the notebook to a whole new level of performance and portability. Wherever your ideas take you, you'll get there faster than ever with high-performance processors and memory, advanced graphics, amazingly fast storage and more.</p>
+    <button onclick="macbookpro()" class="btn btn-primary">Click to Buy!</button>
   </div>
   </div>
   <div class="card" style="width:400px">
-  <img class="card-img-top" src="images\Mac_1.jpg" alt="Card image" height = "400">
+  <img class="card-img-top" src="images\imac_pro.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iMac Pro</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">Pros love iMac. So we created one just for you. It's packed with the most powerful graphics and processors ever in a Mac, along with the most advanced storage, memory and I/O - all behind a breathtaking Retina 5K display in a sleek, all-in-one design. For everyone from photographers to video editors to 3D animators to musicians to software developers to scientists, iMac Pro is ready to turn your biggest ideas into your greatest work.</p>
+    <button onclick="imacpro()" class="btn btn-primary">Click to Buy!</button>
   </div>
 </div>
 </div>
 </div>
-	
+<br><br>
 	
 	
 	<!-- Footer Taken from https://stackoverflow.com/questions/38505021/how-do-you-make-a-footer-with-links-using-css (OK) -->
@@ -161,4 +161,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+    	<!-- Javascript (EG) -->
+	<script src="script.js"></script>
 </html>

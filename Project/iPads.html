@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -30,7 +30,7 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="iPhones.html" id = "iphones1">iPhones</a>
 						<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="iMacs.html">Mac</a>
+							<a class="dropdown-item" href="iMacs.html">iMac</a>
 						<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="iPads.html">iPad</a>
 						</div>
@@ -64,7 +64,7 @@
 				</li>
 				<!-- Shopping Cart Icon (OK) -->
 				<li class="nav-item">
-					<a class="nav-link" href="#" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span></a>
+					<a class="nav-link" href="Cart.html" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span><span id="dispNum"> 0</span></a>
 				</li>
 			</ul>
 		</div>
@@ -80,7 +80,7 @@
 	<div class="container">
 	  <div class="page-header">
 		<br>
-		 <h1 align = "center"><b>Placeholder</b> Placeholder <b>Placeholder</b></h1>
+		 <h1 align = "center">Our lineup of <b>iPads</b></h1>
 		<br>
 		<br>
 		<br>
@@ -90,19 +90,23 @@
 	<div class="container" id ="iphones">
 	<div class="card-deck">
   <div class="card" style="width:600px">
-  <img class="card-img-top" src="images\iPad_1.jpg" alt="Card image" height = "300">
+  <img class="card-img-top" src="images\iPad_air.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iPad Air</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">iPad Air brings more of our most powerful technologies to 
+	more people than ever. The A12 Bionic chip with Neural Engine. 
+	A 10.5-inch Retina display with True Tone. Support for Apple Pencil 
+	and the Smart Keyboard. And at just 456 grams and 6.1 millimetres thin, 
+	carrying all that power is effortless.</p>
+    <button onclick="ipadAir()" class="btn btn-primary">Click to Buy!</button>
   </div>
   </div>
   <div class="card" style="width:600px">
-  <img class="card-img-top" src="images\iPad_1.jpg" alt="Card image" height = "300">
+  <img class="card-img-top" src="images\iPad.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iPad</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">If the computer were invented today, what would it look like? It would be powerful enough for any task. So mobile you could take it everywhere. And so intuitive you could use it any way you wanted - with touch, a keyboard or even a pencil. In other words, it wouldn't really be a "computer". It would be iPad.</p>
+    <button onclick="ipad()" class="btn btn-primary">Click to Buy!</button>
   </div>
 </div>
 </div>
@@ -111,19 +115,20 @@
 <div class="container" id ="iphones">
 	<div class="card-deck">
   <div class="card" style="width:400px">
-  <img class="card-img-top" src="images\iPad_1.jpg" alt="Card image" height = "300">
+   <img class="card-img-top" src="images\iPad_pro.png" alt="Card image" height = "500">
+ 
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iPad Pro</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">It's all new, all screen and all powerful. Completely redesigned and packed with our most advanced technology it will make you rethink what iPad is capable of.</p>
+    <button onclick="ipadPro()" class="btn btn-primary">Click to Buy!</button>
   </div>
   </div>
   <div class="card" style="width:400px">
-  <img class="card-img-top" src="images\iPad_1.jpg" alt="Card image" height = "300">
+  <img class="card-img-top" src="images\iPad_mini.png" alt="Card image" height = "500">
   <div class="card-body">
     <h4 class="card-title" style = "color:black;">iPad Mini</h4>
-    <p class="card-text" style = "color:black;">More Placeholder Text.</p>
-    <a href="#" class="btn btn-primary">Click to Buy!</a>
+    <p class="card-text" style = "color:black;">iPad mini is beloved for its size and capability. And now there are even more reasons to love it. The A12 Bionic chip with Neural Engine. A 7.9inch Retina display with True Tone. And Apple Pencil, so you can capture your biggest ideas wherever they come to you. It's still iPad mini. There's just more of it than ever.</p>
+    <button onclick="ipadMini()" class="btn btn-primary">Click to Buy!</button>
   </div>
 </div>
 </div>
@@ -161,4 +166,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+  	<!-- Javascript (EG) -->
+	<script src="script.js"></script>
 </html>
