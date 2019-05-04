@@ -14,11 +14,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- Favicon.ico (OK) -->
 	<link rel="shortcut icon" href="images\faviconApple.ico" type="image/x-icon">
-    <title>Cart</title>
+    <title>Products | Accessories </title>
   </head>
  <body>
-  
-	<!--Nav Bar Taken from https://getbootstrap.com/docs/4.0/components/navbar/ (OK) -->
+ 
+ <!--Nav Bar Taken from https://getbootstrap.com/docs/4.0/components/navbar/ (OK) -->
 	<nav class="navbar navbar-dark navbar-expand-lg ">
 		<!-- Window collapse order (OK) -->
 		<div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
@@ -36,6 +36,7 @@
 						<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="Accessories.html">Accessories</a>	
 						</div>
+						
 				</li>
 				</li>
 				<li class="nav-item">
@@ -43,7 +44,7 @@
 				</li>
 				                     <!-- Internal CSS as "Contact Us" would collapse oddly (OK) -->
 				<li class="nav-item" style ="padding-right: 20px, font-family: 'Montserrat', sans-serif, color:#ffffff">
-					<a class="nav-link" href="Contact Us.html" >Contact Us</a>
+					<a class="nav-link" href="Contact Us.html">Contact Us</a>
 				</li>
 			</ul>
 		</div>
@@ -66,7 +67,7 @@
 				</li>
 				<!-- Shopping Cart Icon (OK) -->
 				<li class="nav-item">
-					<a class="nav-link" href="#" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span><span id="dispNum"> 0</span></a>
+					<a class="nav-link" href="Cart.html" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span><span id="dispNum"> 0</span></a>
 				</li>
 			</ul>
 		</div>
@@ -82,35 +83,60 @@
 	<div class="container">
 	  <div class="page-header">
 		<br>
-		 <h1 align = "center"><b>Cart</b></h1>
+		 <h1 align = "center">Our lineup of <b>iPhones</b></h1>
+		<br>
+		<br>
 		<br>
 	 </div>
 	</div>
 	
-	<!-- Cart overlay -->
+	<div class="container" id ="iphones">
+	<div class="card-deck">
+  <div class="card" style="width:400px">
+  <img class="card-img-top" src="images\pods.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title" style = "color:black;">Air Pods</h4>
+    <p class="card-text" style = "color:black;">Powered by the all-new Apple H1 headphone chip, AirPods use optical sensors and motion accelerometers to detect when they’re in your ears. Whether you’re using both AirPods or just one, the H1 chip automatically routes the audio and engages the microphone. And when you’re on a call or talking to Siri, an additional speech-detecting accelerometer works with beamforming microphones to filter out external noise and focus on the sound of your voice.</p>
+    <button onclick="airpods()" class="btn btn-primary">Click to Buy!</button>
+  </div>
+  </div>
+  <div class="card" style="width:400px">
+  <img class="card-img-top" src="images\case.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title" style = "color:black;">iPhone Case</h4>
+    <p class="card-text" style = "color:black;">A
+	Engineered for iPhone XS, the Smart Battery Case gives you even longer battery life while offering great protection. Inside, a soft microfibre lining helps protect your iPhone. And on the outside, the silky, soft-touch finish of the silicone exterior feels great in your hand. A soft elastomer hinge design makes it easy to put the case on and take it off.</p>
+    <button onclick="iphoneCase()" class="btn btn-primary">Click to Buy!</button>
+  </div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="container" id ="iphones">
+	<div class="card-deck">
+  <div class="card" style="width:400px">
+  <img class="card-img-top" src="images\ipadCase.png" alt="Card image"> 
+  <div class="card-body">
+    <h4 class="card-title" style = "color:black;">iPad Cases</h4>
+    <p class="card-text" style = "color:black;">
+	The Smart Cover for iPad mini is constructed from a single piece of polyurethane to protect the front of your device. It automatically wakes your iPad when opened and puts it to sleep when closed. You can easily fold the Smart Cover into different positions to create a stand for reading, viewing, typing or making FaceTime calls. And it’s easy to remove, so you can snap it on and off whenever you want.</p>
+   <button onclick="ipadCase()" class="btn btn-primary">Click to Buy!</button>
+  </div>
+  </div>
+  <div class="card" style="width:400px">
+  <img class="card-img-top" src="images\watch_band.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title" style = "color:black;">Apple Watch Straps</h4>
+    <p class="card-text" style = "color:black;">
+	Made from a custom high-performance fluoroelastomer with compression-moulded perforations for breathability, the Nike Sport Band is durable and strong, yet surprisingly soft. The smooth, dense material drapes elegantly across your wrist and feels comfortable next to your skin. An innovative pin-and-tuck closure ensures a clean fit.</p>
+    <button onclick="watch()" class="btn btn-primary">Click to Buy!</button>
+  </div>
+</div>
+</div>
+</div>
 	
-	<div class="box">
-		<div class="overlay">
-			  <table class="table table-dark table-striped">
-					<thead>
-					  <tr>
-						<th>Item</th>
-						<th>Quantity</th>
-						<th>Price</th>
-					  </tr>
-					</thead>				
-					<tbody>
-					<tr>
-						<td><h3 id="itemName">Your Cart is empty</h3></td>
-						<td></td>
-						<td></td>
-					  </tr>
-					</tbody> 
-			  </table>
-		</div>
-	</div>
 	
-
+	
 	<!-- Footer Taken from https://stackoverflow.com/questions/38505021/how-do-you-make-a-footer-with-links-using-css (OK) -->
 	<div class="container">
 	  <div class="page-footer">
@@ -127,19 +153,15 @@
 			</div>
 			<!-- Small Copyright (OK) -->
 			<div class="copyright">
-				<p>Placeholder™ ©2019</p>
+				<p>Placeholderâ„¢ Â©2019</p>
 		</footer>
 		
 	</div>
 	</div>
 	</div>
+	
 
-
-	
-	
-	
-	
-    <!-- Optional JavaScript -->
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

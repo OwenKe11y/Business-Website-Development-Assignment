@@ -251,4 +251,78 @@
 		
 	}
 
+	// Button for adding imac to cart (EG)
+	function airpods() 
+	{
+		if (localStorage.getItem("cartNum"))
+		{
+			localStorage.setItem("cartNum", ++cartNum);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		// initial set (EG)
+		else
+		{
+			localStorage.setItem("cartNum", 1);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		
+	}
+
+	// Button for adding imac to cart (EG)
+	function iphoneCase() 
+	{
+		if (localStorage.getItem("cartNum"))
+		{
+			localStorage.setItem("cartNum", ++cartNum);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		// initial set (EG)
+		else
+		{
+			localStorage.setItem("cartNum", 1);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		
+	}	
 	
+		// Button for adding imac to cart (EG)
+	function ipadCase() 
+	{
+		if (localStorage.getItem("cartNum"))
+		{
+			localStorage.setItem("cartNum", ++cartNum);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		// initial set (EG)
+		else
+		{
+			localStorage.setItem("cartNum", 1);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		
+	}	
+	
+		// Button for adding imac to cart (EG)
+	function watch() 
+	{
+		if (localStorage.getItem("cartNum"))
+		{
+			localStorage.setItem("cartNum", ++cartNum);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		// initial set (EG)
+		else
+		{
+			localStorage.setItem("cartNum", 1);
+			cartNum = localStorage.getItem("cartNum");
+			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
+		}
+		
+	}	
