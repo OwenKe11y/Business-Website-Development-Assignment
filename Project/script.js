@@ -351,7 +351,7 @@
 		
 	}
 
-	// Button for adding imac to cart (EG)
+	// Button for adding air pods to cart (EG & DH)
 	function airpods() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iAirPods));
@@ -361,7 +361,7 @@
 			cartNum = localStorage.getItem("cartNum");
 			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
 		}
-		// initial set (EG)
+		// initial set (EG & DH)
 		else
 		{
 			localStorage.setItem("cartNum", 1);
@@ -371,7 +371,7 @@
 		
 	}
 
-	// Button for adding imac to cart (EG)
+	// Button for adding iphone case to cart (EG &DH)
 	function iphoneCase() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPhoneCase));
@@ -381,7 +381,7 @@
 			cartNum = localStorage.getItem("cartNum");
 			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
 		}
-		// initial set (EG)
+		// initial set (EG &DH)
 		else
 		{
 			localStorage.setItem("cartNum", 1);
@@ -391,7 +391,7 @@
 		
 	}	
 	
-		// Button for adding imac to cart (EG)
+		// Button for adding ipad case to cart (EG & DH)
 	function ipadCase() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPadCases));
@@ -401,7 +401,7 @@
 			cartNum = localStorage.getItem("cartNum");
 			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
 		}
-		// initial set (EG)
+		// initial set (EG & DH)
 		else
 		{
 			localStorage.setItem("cartNum", 1);
@@ -411,7 +411,7 @@
 		
 	}	
 	
-		// Button for adding imac to cart (EG)
+		// Button for adding watch straps to cart (EG &DH)
 	function watch() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iAppleStrapsObj));
@@ -421,7 +421,7 @@
 			cartNum = localStorage.getItem("cartNum");
 			document.getElementById("dispNum").innerHTML = " " + localStorage.getItem("cartNum");
 		}
-		// initial set (EG)
+		// initial set (EG & DH)
 		else
 		{
 			localStorage.setItem("cartNum", 1);
