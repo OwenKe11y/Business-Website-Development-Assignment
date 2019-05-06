@@ -14,6 +14,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- Favicon.ico (OK) -->
 	<link rel="shortcut icon" href="images\faviconApple.ico" type="image/x-icon">
+	<!-- Daniel Call the JS from the head so it loads first -->
+	<script src="script.js"></script>
     <title>Cart</title>
   </head>
  <body>
@@ -101,8 +103,9 @@
 					</thead>				
 					<tbody>
 					<tr>
-						<td><h3 id="itemName">Your Cart is empty</h3></td>
-						<td></td>
+						<!-- Daniel call the checkCart function to update the cart -->
+						<td><h3 id="itemName"><script>checkCart();</script></h3></td>
+						<td><h3 id="itemPrice"><script>checkCart();</script></h3></td>
 						<td></td>
 					  </tr>
 					</tbody> 
