@@ -211,11 +211,15 @@ ul.dropdown-lr {
 
 /* Enda */
 
+/* Box for contact page card  (EG)*/
+
 .box {
 	margin-left: 10%;
 	margin-right: 10%;
 	overflow: auto;
 }
+
+/* grey overlay that items sit on (EG)*/
 
 .overlay {
 	position: relative;
@@ -228,9 +232,13 @@ ul.dropdown-lr {
 	
 }
 
+/* shadow for cards (EG) */
+
 .card-group{
 	filter: drop-shadow(0px 0px 20px black);
 }
+
+/* buttons for contact page  (EG) */
 
 button {
 	background-color: black;
@@ -242,6 +250,8 @@ button {
 	color: white;
 }
 
+/* Tile for report on about page (EG) */
+
 .report {
 	margin-right: 10%;
 	margin-left: 10%;
@@ -249,6 +259,8 @@ button {
 	margin-bottom: 3%;
 	
 }
+	
+/* image for contact page (EG) */
 
 .support {
 	max-width: 100%;
@@ -256,6 +268,8 @@ button {
 	margin: auto;
 	filter: drop-shadow(0px 0px 4px black)
 }
+
+/* Css for social media buttons (EG) */
 
 .img_box {
   display: table;
