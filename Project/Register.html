@@ -18,15 +18,17 @@
   </head>
   <body>
 
-  
+  <!-- Register Form (OK) -->
 	<div class="log-form">
-
+			
+			<!-- Home Page button (OK) -->
 			<a href="Project Home Page.html ">
 				<img src="images\appleBrand.png" width="100" height="100" alt="brand" class = "center">
 			</a>
 
 		<h2>Sign Up now!</h2>	
-		
+	
+	<!-- Form Proper (OK)-->
 	<form id = "signup" method="post" action = "Project Home Page.html">
 		<input type="text" title="username" placeholder="Name" id = "name" required />
 		<input type="text" title="username" placeholder="Email" id = "email" required />
@@ -35,13 +37,13 @@
 		<button type="submit" class="btn">Sign up</button>
 		<a class="forgot" href="Login.html">Already have an account? Login Here</a>
 	</form>
-	</div><!--end log form -->
+	</div>
    </body>
  
- 
+	<!-- Register Function, Register is pre determined as "Gerg Smith" with password "123" and email "gregsmith@gmail.com" (OK) -->
    <script>
 	if (localStorage) {
-  // LocalStorage is supported!
+
 	} else {
   // No support. Use a fallback such as browser cookies or store on the server.
 	}
@@ -58,10 +60,6 @@
 	localStorage.setItem('email', email);
 	localStorage.setItem('pass', password);
 	 });
-
-
-
-	
    </script>
  
  
