@@ -5,7 +5,7 @@
 	var iPadAirItem;
 	
 
-	//Daniel Product objects
+	//Daniel Product objects (OK)
 	
 	var iphoneXSObj = {model:"iPhone XS", price: 879};
 	var iphoneXRObj = {model:"iPhone XR", price: 879};
@@ -24,7 +24,7 @@
 	var iPadCasesObj = {model:"iPad Cases", price: 45};
 	var iAppleStrapsObj = {model:"Apple Watch Straps", price: 59};
 	
-	//Daniel Cart Array
+	//Daniel Cart Array (OK)
 	var cart = [];
 	
 	
@@ -40,11 +40,11 @@
 	}
 
 
-	//Daniel cart viewing function
+	//Daniel cart viewing function (OK)
 	function checkCart()
 	{
 
-		//update the cart array from the local storage
+		//update the cart array from the local storage (OK)
 		var i;
 		for (i = 0; i < cartNum; i++) {
   			var temp = localStorage.getItem(i);
@@ -53,7 +53,7 @@
 		}
 
 
-		//add each "model name" to the item name field
+		//Add each "model name" to the item name field (OK)
 		if (cartNum > 0)
 		{
 			var txt = "";
@@ -72,6 +72,7 @@
 			document.getElementById("itemName").innerHTML = "Your cart is empty";
 		}
 		
+		//Add each "model price" to the item name field (OK)
 		if (cartNum > 0)
 		{
 			var txt = "";
@@ -92,7 +93,7 @@
 		
 	}
 
- // Button for adding iPad to cart (EG)
+ // Button for adding iPad to cart (EG & OK)
 	function ipadAir() 
 	{
 		
@@ -120,7 +121,7 @@
 		
 	} 
 	
-	// Button for adding iPad to cart (EG)
+	// Button for adding iPad to cart (EG & OK)
 	function ipad() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPadObj));
@@ -162,7 +163,7 @@
 		
 	} 
 	
-	// Button for adding ipad to cart (EG)
+	// Button for adding ipad to cart (EG & OK)
 	function ipadMini() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPadMiniObj));
@@ -183,7 +184,7 @@
 		
 	}	
 	
-	// Button for adding iphone to cart (EG)
+	// Button for adding iphone to cart (EG & OK)
 	function iphonexs() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iphoneXSObj));
@@ -204,7 +205,7 @@
 		
 	}
 	
-	// Button for adding iphone to cart (EG)
+	// Button for adding iphone to cart (EG & OK)
 	function iphonexr() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iphoneXRObj));
@@ -224,7 +225,7 @@
 		
 	}	
 	
-	// Button for adding iphoneto cart (EG)
+	// Button for adding iphoneto cart (EG & OK)
 	function iphone8() 
 	{
 		//Daniel Add an Iphone8 object to the cart
@@ -251,7 +252,7 @@
 		
 	}	
 	
-	// Button for adding iphone to cart (EG)
+	// Button for adding iphone to cart (EG & OK)
 	function iphone7() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iphone7Obj));
@@ -271,7 +272,7 @@
 		
 	}
 	
-	// Button for adding imac to cart (EG)
+	// Button for adding imac to cart (EG & OK)
 	function imac() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iMacObj));
@@ -291,7 +292,7 @@
 		
 	}
 	
-	// Button for adding macbook to cart (EG)
+	// Button for adding macbook to cart (EG & OK)
 	function macbookair() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iMacAirObj));
@@ -311,7 +312,7 @@
 		
 	}
 	
-	// Button for adding macbook to cart (EG)
+	// Button for adding macbook to cart (EG & OK)
 	function macbookpro() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iMacBPro));
@@ -331,7 +332,7 @@
 		
 	}
 	
-	// Button for adding imac to cart (EG)
+	// Button for adding imac to cart (EG & OK)
 	function imacpro() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iMacPro));
@@ -351,7 +352,7 @@
 		
 	}
 
-	// Button for adding air pods to cart (EG & DH)
+	// Button for adding air pods to cart (EG & DH & OK)
 	function airpods() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iAirPods));
@@ -371,7 +372,7 @@
 		
 	}
 
-	// Button for adding iphone case to cart (EG &DH)
+	// Button for adding iphone case to cart (EG & DH & OK)
 	function iphoneCase() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPhoneCase));
@@ -391,7 +392,7 @@
 		
 	}	
 	
-		// Button for adding ipad case to cart (EG & DH)
+		// Button for adding ipad case to cart (EG & DH & OK)
 	function ipadCase() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iPadCases));
@@ -411,7 +412,7 @@
 		
 	}	
 	
-		// Button for adding watch straps to cart (EG &DH)
+		// Button for adding watch straps to cart (EG & DH & OK)
 	function watch() 
 	{
 		localStorage.setItem(cartNum, JSON.stringify(iAppleStrapsObj));

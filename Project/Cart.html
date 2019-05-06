@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- Favicon.ico (OK) -->
 	<link rel="shortcut icon" href="images\faviconApple.ico" type="image/x-icon">
-	<!-- Daniel Call the JS from the head so it loads first -->
+	<!-- Daniel Call the JS from the head so it loads first (OK) -->
 	<script src="script.js"></script>
     <title>Cart</title>
   </head>
@@ -89,7 +89,7 @@
 	 </div>
 	</div>
 	
-	<!-- Cart overlay -->
+	<!-- Cart overlay (OK) -->
 	
 	<div class="box">
 		<div class="overlay">
@@ -97,16 +97,14 @@
 					<thead>
 					  <tr>
 						<th>Item</th>
-						<th>Quantity</th>
 						<th>Price</th>
 					  </tr>
 					</thead>				
 					<tbody>
 					<tr>
-						<!-- Daniel call the checkCart function to update the cart -->
+						<!-- Daniel call the checkCart function to update the cart (OK) -->
 						<td><h3 id="itemName"><script>checkCart();</script></h3></td>
 						<td><h3 id="itemPrice"><script>checkCart();</script></h3></td>
-						<td></td>
 					  </tr>
 					</tbody> 
 			  </table>
